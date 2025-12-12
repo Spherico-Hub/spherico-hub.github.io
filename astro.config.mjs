@@ -7,11 +7,11 @@ import { ion } from 'starlight-ion-theme';
 // https://astro.build/config for more information
 export default defineConfig({
     // basic site config
-    site: "https://wiki.zauraac.xyz",
+    site: "https://spherico.one",
     trailingSlash: "ignore",
     integrations: [
         starlight({
-            title: 'Zauraac.xyz',
+            title: 'Spherico',
 	    logo: {
 		light: './src/assets/logo-light.svg',
 		dark: './src/assets/logo-dark.svg',
@@ -27,8 +27,7 @@ export default defineConfig({
 	    ],
             tableOfContents: true,
             social: [
-                { icon: 'github', label: 'Source', href: 'https://github.com/Zauraac/wiki' },
-		{ icon: 'discord', label: 'Discord', href: 'https://discord.gg/invite/Nabv2D8' },
+                { icon: 'github', label: 'Source', href: 'https://github.com/itsaerosphere/wiki' },
             ],
             sidebar: [
 		{
@@ -37,23 +36,9 @@ export default defineConfig({
 		},
 
 		{
-		    label: 'Minecraft',
-		    autogenerate: { directory: 'games/minecraft', collapsed: true, },
+		    label: 'SphericoMC',
+		    autogenerate: { directory: 'server/minecraft', collapsed: false, },
 		},
-		{
-		    label: 'Stardew Valley',
-		    autogenerate: { directory: 'games/stardew', collapsed: true, },
-		},
-                {
-                    label: 'Services',
-		    items: [
-			{ slug: 'services/wiki' },
-			{ slug: 'services/3dprinting' },
-			{ label: 'VPN overview', slug: 'services/vpn/getting-started' },
-			// { slug: 'services/vpn/zerotier' },
-			// { slug: 'services/vpn/wireguard' },
-		    ]
-                },
             ],
         }),
     ],
