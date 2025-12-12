@@ -40,15 +40,19 @@ export default defineConfig({
 		    link: '/server/rules',
 		},
 		{
-		    label: 'Season 1',
+		    label: 'Season 4',
 		    autogenerate: {
-			directory: 'server/S1', collapsed: false,
+			directory: 'server/S4', collapsed: false,
+		    },
+		    badge: {
+			text: 'Active',
+			variant: 'success',
 		    },
 		},
 		{
-		    label: 'Season 2',
+		    label: 'Season 5',
 		    autogenerate: {
-			directory: 'server/S2', collapsed: true,
+			directory: 'server/S5', collapsed: false,
 		    },
 		    badge: {
 			text: 'Coming soon!',
