@@ -38,40 +38,40 @@ export default defineConfig({
 		{ icon: 'discord', label: 'Discord', href: 'https://discord.gg/dSjmeM5yAy', },
             ],
             sidebar: [
-		{
-		    label: '[home] Home',
-		    link: '/',
-		},
-		{
-		    label: 'Rules',
-		    link: '/server/rules',
-		},
-		{
-		    label: 'Season 4',
-		    autogenerate: {
-			directory: 'server/s4', 
-			collapsed: false,
-		    },
-		    badge: {
-			text: 'Active',
-			variant: 'success',
-		    },
-		},
-		{
-		    label: 'Season 5',
-		    autogenerate: {
-			directory: 'server/s5', 
-			collapsed: true,
-		    },
-		    badge: {
-			text: 'Coming soon!',
-			variant: 'caution',
-		    },
-		},
-		{
-		    label: 'World Map',
-		    link: 'https://map.spherico.one',
-		},
+				{
+					label: '[home] Home',
+					link: '/',
+				},
+				{
+					label: 'Rules',
+					link: '/server/rules',
+				},
+				{
+					label: 'Season 4',
+					autogenerate: {
+					directory: 'server/s4', 
+					collapsed: false,
+					},
+					badge: {
+					text: 'Active',
+					variant: 'success',
+					},
+				},
+				{
+					label: 'Season 5',
+					autogenerate: {
+					directory: 'server/s5', 
+					collapsed: true,
+					},
+					badge: {
+					text: 'Coming soon!',
+					variant: 'caution',
+					},
+				},
+				{
+					label: 'World Map',
+					link: 'https://map.spherico.one',
+				},
             ],
         }),
     ],
