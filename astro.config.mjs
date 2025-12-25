@@ -18,38 +18,42 @@ export default defineConfig({
     integrations: [
         starlight({
             title: 'Spherico',
-	    logo: {
-		light: './src/assets/logo-light.svg',
-		dark: './src/assets/logo-dark.svg',
-	    },
-	    favicon: './src/assets/logo-dark.svg',
-	    lastUpdated: false,
-	    plugins: [
-		ion({
-			footer: {
-				text: 'Built with spite, weaponized autism and plenty of swearing.',
+			logo: {
+				light: './src/assets/logo-light.svg',
+				dark: './src/assets/logo-dark.svg',
 			},
-			icons: undefined
-		}),
-	    ],
-            tableOfContents: true,
-            social: [
-                { icon: 'github', label: 'Source', href: 'https://github.com/itsaerosphere/wiki' },
-		{ icon: 'discord', label: 'Discord', href: 'https://discord.gg/dSjmeM5yAy', },
-            ],
-            sidebar: [
+			favicon: './src/assets/logo-dark.svg',
+			lastUpdated: false,
+			plugins: [
+				ion({
+					footer: {
+						text: 'Built with spite, weaponized autism and plenty of swearing.',
+					},
+					icons: undefined
+				}),
+			],
+			tableOfContents: true,
+			social: [
+				{ icon: 'github', label: 'Source', href: 'https://github.com/itsaerosphere/wiki' },
+				{ icon: 'discord', label: 'Discord', href: 'https://discord.gg/dSjmeM5yAy', },
+			],
+			sidebar: [
 				{
 					label: '[home] Home',
 					link: '/',
 				},
 				{
 					label: 'Rules',
-					link: '/server/rules',
+					link: '/minecraft/rules',
+				},
+				{
+					label: 'Setup',
+					link: '/minecraft/setup'
 				},
 				{
 					label: 'Season 4',
 					autogenerate: {
-					directory: 'server/s4', 
+					directory: 'minecraft/s4', 
 					collapsed: false,
 					},
 					badge: {
@@ -60,7 +64,7 @@ export default defineConfig({
 				{
 					label: 'Season 5',
 					autogenerate: {
-					directory: 'server/s5', 
+					directory: 'minecraft/s5', 
 					collapsed: true,
 					},
 					badge: {
@@ -72,7 +76,7 @@ export default defineConfig({
 					label: 'World Map',
 					link: 'https://map.spherico.one',
 				},
-            ],
+			],
         }),
     ],
 });
