@@ -26,10 +26,9 @@ export default defineConfig({
 	    lastUpdated: false,
 	    plugins: [
 		ion({
-			footer: {
-				text: 'Built with spite, weaponized autism and plenty of swearing.',
-			},
-			icons: undefined
+		    footer: {
+			text: 'Built with spite, weaponized autism and plenty of swearing.',
+		    },
 		}),
 	    ],
             tableOfContents: true,
