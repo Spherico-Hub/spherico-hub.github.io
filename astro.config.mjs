@@ -48,7 +48,8 @@ export default defineConfig({
 		{
 		    label: 'Season 4',
 		    autogenerate: {
-			directory: 'server/s4', collapsed: false,
+			directory: 'server/s4', 
+			collapsed: false,
 		    },
 		    badge: {
 			text: 'Active',
@@ -58,7 +59,8 @@ export default defineConfig({
 		{
 		    label: 'Season 5',
 		    autogenerate: {
-			directory: 'server/s5', collapsed: true,
+			directory: 'server/s5', 
+			collapsed: true,
 		    },
 		    badge: {
 			text: 'Coming soon!',
