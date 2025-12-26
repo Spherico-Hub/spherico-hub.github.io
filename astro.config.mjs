@@ -17,7 +17,7 @@ export default defineConfig({
     trailingSlash: "ignore",
     integrations: [
         starlight({
-            title: '',
+            title: 'Spherico',
 			logo: {
 				light: './src/assets/logo-light.svg',
 				dark: './src/assets/logo-dark.svg',
@@ -44,7 +44,7 @@ export default defineConfig({
 				},
 				{
 					label: 'Rules',
-					link: '/minecraft/rules',
+					link: '/rules',
 				},
 				{
 					label: 'Minecraft S4',
