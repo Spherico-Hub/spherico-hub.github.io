@@ -3,7 +3,6 @@ title: Information (for the nerdz)
 sidebar: 
   order: 99
   label: Technical info
-next: false
 ---
 ### 0-9
 [3D Skin Layers](https://modrinth.com/mod/3dskinlayers)
