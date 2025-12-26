@@ -2,7 +2,7 @@
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 import { ion } from 'starlight-ion-theme';
-import starlightLinksValidator from 'starlight-links-validator';
+// import starlightLinksValidator from 'starlight-links-validator'; // Uncomment when actually in use
 
 
 // https://astro.build/config for more information
