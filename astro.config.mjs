@@ -22,7 +22,7 @@ export default defineConfig({
 				light: './src/assets/logo-light.svg',
 				dark: './src/assets/logo-dark.svg',
 			},
-			favicon: './public/favicon.png',
+			favicon: './public/favicon.ico',
 			lastUpdated: false,
 			plugins: [
 				ion({
