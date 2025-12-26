@@ -1,6 +1,8 @@
-# Spherico Wiki
+# [Spherico Wiki](https://wiki.spherico.one)
 
 [Built with Starlight](https://starlight.astro.build) and Github pages. 
+
+Also plenty of pain and [commit history shenanigans](https://github.com/Spherico-Hub/wiki/commits/main/).
 
 ## Structure
 ### Pages
@@ -22,6 +24,11 @@ tableOfContents: <true/false>
 Images can be added to `src/assets/` and embedded in Markdown with a relative link.
 
 Static assets, like favicons, can be placed in the `public/` directory.
+
+## Contributing
+
+You will need to have NPM and the dependencies for Astro installed. 
+View `astro.config.mjs` for an up-to-date list of dependencies. 
 
 ## Commands
 
