@@ -1,9 +1,11 @@
 ---
 title: Welcome!
 description: Homepage 
-template: splash 
+template: splash
 hero:
   tagline: Documentation to set up and connect to various hosted services. 
+  image:
+    file: ./spherico.png
   actions:
     - text: Map
       link: https://map.spherico.one/
@@ -32,13 +34,34 @@ You'll find all sorts of information here on how to set up services and game ser
 
 ## Modded Minecraft *(Season 4)*
 <CardGrid>
-    <LinkCard title="Setup" href="/minecraft/s4/setup" />
-    <LinkCard title="Customization" href="/minecraft/s4/customization" />
-    <LinkCard title="Information" href="/minecraft/s4/information" />
+    <LinkCard 
+	title="Setup" 
+	description="Initial setup & update instructions."
+	href="/minecraft/s4/setup" 
+    />
+    <LinkCard 
+	title="Customization" 
+	description="Instructions to customize your instance of Minecraft."
+	href="/minecraft/s4/customization" 
+    />
+    <LinkCard
+	title="Configuration"
+	description="Instructions to migrate your settings between updates."
+	href="/minecraft/s4/config_migration"
+    />
+    <LinkCard 
+	title="Information" 
+	description="Information on the modpack."
+	href="/minecraft/s4/information" 
+    />
 </CardGrid>
 
 ## Modded Minecraft *(Season 5)*
-<LinkCard title="Coming soon!" />
+<LinkCard 
+    title="Coming soon!"
+    description="Stay tuned for the release date."
+
+/>
 
 ## External documentation
 <CardGrid>
