@@ -34,7 +34,7 @@ export default defineConfig({
 		    tableOfContents: true,
 		    social: [
 			{ icon: 'github', label: 'Source', href: 'https://github.com/itsaerosphere/wiki' },
-			{ icon: 'discord', label: 'Discord', href: 'https://discord.gg/dSjmeM5yAy', },
+			{ icon: 'comment', label: 'Stoat', href: 'https://stt.gg/rAWEHM1H', },
 		    ],
 		    sidebar: [
 			{
