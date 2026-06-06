@@ -46,30 +46,15 @@ export default defineConfig({
 			    link: '/rules',
 			},
 			{
-			    label: 'Minecraft S4',
+			    label: 'Minecraft',
 			    autogenerate: {
-				    directory: '/minecraft/s4', 
+				    directory: '/minecraft', 
 				    collapsed: false,
 			},
 			    badge: {
 				    text: 'Active',
 				    variant: 'success',
 			    },
-			},
-			{
-			    label: 'Minecraft S5',
-			    autogenerate: {
-				    directory: '', 
-				    collapsed: true,
-			    },
-			    badge: {
-				    text: 'Coming soon!',
-				    variant: 'caution',
-			    },
-			},
-			{
-			    label: 'World Map',
-			    link: 'https://map.spherico.one',
 			},
 		    ],
         }),
