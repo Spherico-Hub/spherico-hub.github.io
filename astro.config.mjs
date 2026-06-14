@@ -35,6 +35,7 @@ export default defineConfig({
 		    social: [
 			{ icon: 'github', label: 'Source', href: 'https://github.com/itsaerosphere/wiki' },
 			{ icon: 'discord', label: 'Discord', href: 'https://discord.gg/dSjmeM5yAy', },
+			{ icon: 'comment', label: 'Fluxer', href: 'https://fluxer.gg/6iOvdPQK'}
 		    ],
 		    sidebar: [
 			{
