@@ -11,11 +11,9 @@ prev:
 
 next: true
 ---
-import { Aside } from '@astrojs/starlight/components';
-import { Tabs, TabItem } from '@astrojs/starlight/components';
-import { Icon } from '@astrojs/starlight/components';
+import { Aside, Icon, Steps, Tabs, TabItem } from '@astrojs/starlight/components';
 
-# Prerequisites
+## Prerequisites
 You will need to have Java installed.
 **Prism Launcher is the only officially supported launcher.** 
 
@@ -40,34 +38,31 @@ You will need to have Java installed.
 
 </Tabs>
 
-# Installing the modpack
-1. Download the file through [this link](https://wiki.spherico.one/modpack/sphericomc-4.zip).
-2. In Prism Launcher, **create** a new instance, go to **import** and **select** the file you have downloaded.
-3. Launch the instance **at least once** and let it load to the main menu.
+## Installing the modpack
+<Steps>
+  1. Download the file through [this link](https://github.com/Spherico-Hub/modpack/releases/download/5.0.0/SphericoMC-5.zip).
+  2. In Prism Launcher, **create** a new instance, go to **import** and **select** the file you have downloaded.
+  3. Launch the instance **at least once** and let it load to the main menu.
+</Steps>
 
 <Aside type="note" icon="seti:config" title="Keeping your configuration">
-If you want to migrate your configuration, [follow this guide](/minecraft/s4/config_migration).
+If you want to migrate your configuration, [follow this guide](/minecraft/config_migration).
 </Aside>
 
 ## Updating the modpack
-<Tabs>
-    <TabItem label="Version 4.2.0 and above">
-    From version 4.2.0 onwards, the modpack will automatically update itself upon launching the game.
-    There are no further actions required. 
-    </TabItem>
+The modpack will automatically update itself upon launching the game.
+There are no further actions required.
 
-    <TabItem label="Version 4.1.0 and below">
-    Modpack versions under 4.1.3 have a different setup that prevent them from being updated automatically.
-    Affected players must create a new instance and follow the **Installing the modpack** section.
-    </TabItem>
-</Tabs>
+<Aside type="note" icon="seti:info" title="Major season-to-season updates">
+When upgrading between seasons, it is best to re-install the modpack from scratch.
+</Aside>
 
 It is important to note that certain versions of SphericoMC may reset your keybinds or settings to the default values.
-In order to carry over your configurations, [follow this guide](/minecraft/s4/config_migration).
+In order to carry over your configurations, [follow this guide](/minecraft/config_migration).
 
 # Connect to the server
 The server should be conveniently be in your multiplayer menu already!
-Otherwise just enter `mc.spherico.one` in the new server window.
+Otherwise just enter `services.spherico.one` in the new server window.
 
 <Aside type="danger" icon="error" title="Whitelist">
 Make sure you have given your Minecraft username to an administrator, otherwise the whitelist will prevent you from joining the server.

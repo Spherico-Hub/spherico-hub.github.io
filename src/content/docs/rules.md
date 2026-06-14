@@ -8,7 +8,7 @@ next:
   label: Get started!
 ---
 
-By using Spherico services, you accept to have your creations be photographed and displayed in this server, unless you advise us to the contrary in written form.
+By using Spherico services, you accept to have your creations be photographed and displayed in our communication channels, unless you advise us to the contrary in written form.
 
 The administration team reserves the right to use their disciplinary powers at their discretion.
 

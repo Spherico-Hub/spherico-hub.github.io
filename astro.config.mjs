@@ -34,7 +34,8 @@ export default defineConfig({
 		    tableOfContents: true,
 		    social: [
 			{ icon: 'github', label: 'Source', href: 'https://github.com/itsaerosphere/wiki' },
-			{ icon: 'comment', label: 'Stoat', href: 'https://stt.gg/rAWEHM1H', },
+			{ icon: 'discord', label: 'Discord', href: 'https://discord.gg/dSjmeM5yAy', },
+			{ icon: 'comment', label: 'Fluxer', href: 'https://fluxer.gg/6iOvdPQK'}
 		    ],
 		    sidebar: [
 			{
@@ -46,30 +47,15 @@ export default defineConfig({
 			    link: '/rules',
 			},
 			{
-			    label: 'Minecraft S4',
+			    label: 'Minecraft',
 			    autogenerate: {
-				    directory: '/minecraft/s4', 
+				    directory: '/minecraft', 
 				    collapsed: false,
 			},
 			    badge: {
 				    text: 'Active',
 				    variant: 'success',
 			    },
-			},
-			{
-			    label: 'Minecraft S5',
-			    autogenerate: {
-				    directory: '', 
-				    collapsed: true,
-			    },
-			    badge: {
-				    text: 'Coming soon!',
-				    variant: 'caution',
-			    },
-			},
-			{
-			    label: 'World Map',
-			    link: 'https://map.spherico.one',
 			},
 		    ],
         }),
