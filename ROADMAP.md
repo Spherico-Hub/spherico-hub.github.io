@@ -18,23 +18,19 @@
 
 ## Assets 
 
-- [ ] Add permalinks for modpack file in `/src/contents/assets`
-    - Add in `/src/contents/docs` if one can't obtain a link to paste in Prism
+- [X] Add permalinks for modpack file in `/src/contents/assets`
 
 - [x] Replace:
     - [x] Favicon
     - [x] Logo
 
-- Consider also adding direct download links for resource/shader packs
-    - If it exceeds [repo limit](https://docs.github.com/en/repositories/creating-and-managing-repositories/repository-limits), fuck it. 
+- [X] Consider also adding direct download links for resource/shader packs
+    - Managed by Packwiz
 
 ## Modpack files
 
-- Add modpack files to:
-    - [-] `/src/contents/assets`
-        - Need to spend more time figuring out LFS
-    - [x] Google Drive (S5)
-    - [x] Github repo cuz we're nerdz
+- [X] Add modpack files to Github repo cuz we're nerdz
+    - Managed by Packwiz
 
 
 # To test
