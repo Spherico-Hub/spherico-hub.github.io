@@ -7,6 +7,21 @@ sidebar:
 import { Steps } from '@astrojs/starlight/components';
 import { Aside } from '@astrojs/starlight/components';
 
+## Crashing after a certain amount of time
+You may not have allocated enough RAM for Minecraft to run properly with all the mods.
+To fix this:
+
+<Steps>
+  1. On Prism Launcher, select `Settings`, then `Java`.
+  2. Under the `Memory` section, set the minimum and maximum memory usage to your preference.
+</Steps>
+
+<Aside type='tip'>
+  At a minimum, you should allocate **6 GiB (6144 MiB)** of memory to Minecraft.
+  If you are running graphically intensive addons such as shaders, texture packs or Distant Horizons,
+  allocate at least **8 GiB (8192 MiB)** or **10 GiB (10240 MiB)** of memory for ease of mind.
+</Aside>
+
 ## Crashing on world loading
 If you use Distant Horizons, your LODs (level of detail) might have gotten corrupted.
 To regenerate your LODs:
