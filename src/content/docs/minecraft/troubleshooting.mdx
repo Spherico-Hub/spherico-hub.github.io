@@ -1,64 +1,68 @@
 ---
 title: Troubleshooting
-sidebar: 
+sidebar:
   label: Troubleshooting
   order: 10
 ---
+
 import { Steps } from '@astrojs/starlight/components';
 import { Aside } from '@astrojs/starlight/components';
 
 ## Crashing after a certain amount of time
+
 You may not have allocated enough RAM for Minecraft to run properly with all the mods.
 To fix this:
 
 <Steps>
-  1. On Prism Launcher, select `Settings`, then `Java`.
-  2. Under the `Memory` section, set the minimum and maximum memory usage to your preference.
-     Whatever you choose, both should be set at the same number.
+  1. On Prism Launcher, select `Settings`, then `Java`. 2. Under the `Memory` section, set the
+  minimum and maximum memory usage to your preference. Whatever you choose, both should be set at
+  the same number.
 </Steps>
 
-<Aside type='tip'>
-  At a minimum, you should allocate **6 GiB (6144 MiB)** of memory to Minecraft.
-  If you are running graphically intensive addons such as shaders, texture packs or Distant Horizons,
-  allocate at least **8 GiB (8192 MiB)** or **10 GiB (10240 MiB)** of memory for ease of mind.
+<Aside type="tip">
+  At a minimum, you should allocate **6 GiB (6144 MiB)** of memory to Minecraft. If you are running
+  graphically intensive addons such as shaders, texture packs or Distant Horizons, allocate at least
+  **8 GiB (8192 MiB)** or **10 GiB (10240 MiB)** of memory for ease of mind.
 </Aside>
 
 ## Crashing on world loading
+
 If you use Distant Horizons, your LODs (level of detail) might have gotten corrupted.
 To regenerate your LODs:
 
 <Steps>
-  1. On Prism Launcher, select your Minecraft instance, then `Folder`.
-  2. Enter the `minecraft/Distant_Horizons_server_data` folder.
-  3. Delete the `SphericoMC` folder.
-  4. Start your Minecraft instance.
+  1. On Prism Launcher, select your Minecraft instance, then `Folder`. 2. Enter the
+  `minecraft/Distant_Horizons_server_data` folder. 3. Delete the `SphericoMC` folder. 4. Start your
+  Minecraft instance.
 </Steps>
 
 ## Configuration Migration
+
 If you already have a setup for your configuration, you can follow these steps to import them into a new instance.
 You may have to follow those steps whenever you update, or when the server moves on to a new season.
 
 <Steps>
-1. Locate the `options.txt` file and `xaero` folder.
-    - They will usually be located under the root file of your `minecraft` folder. 
-    - To access it from the Prism Launcher, select your old instance and click on 'Folder' on the right sidebar. 
-2. Back up the `options.txt` file and `xaero` folder in a safe location.
-     - *The desktop will do fine.*
-3. Update/Install your instance of the game.
-4. Paste the `options.txt` file and `xaero` folder into the new instance's `minecraft` folder. 
+  1. Locate the `options.txt` file and `xaero` folder. - They will usually be located under the root
+  file of your `minecraft` folder. - To access it from the Prism Launcher, select your old instance
+  and click on 'Folder' on the right sidebar. 2. Back up the `options.txt` file and `xaero` folder
+  in a safe location. - *The desktop will do fine.* 3. Update/Install your instance of the game. 4.
+  Paste the `options.txt` file and `xaero` folder into the new instance's `minecraft` folder.
 </Steps>
 
 <Aside type="caution" title="Compatibility notice">
-Note that config files may not be compatible between different versions of the modpack.
-If such a file is incompatible, you can always remove it from the `minecraft` folder and it will replace itself when launching the game.
+  Note that config files may not be compatible between different versions of the modpack. If such a
+  file is incompatible, you can always remove it from the `minecraft` folder and it will replace
+  itself when launching the game.
 </Aside>
 
 ## Keybinds / other settings are borked
+
 You can delete the options.txt to regenerate the modpack defaults. On Prism Launcher, select your instance, then `Folder`.
 Next, navigate inside the `minecraft` folder and delete the `options.txt` file.
 Finally, start your Minecraft instance.
 
 ## Prism can't find Forge
+
 Check if you're still logged in by clicking on your account at the top right window, then `Manage Accounts`.
 If you do not see your account status as "Ready", select your account and press on "Refresh".
 You will be prompted for your Microsoft credentials.
