@@ -25,10 +25,7 @@ export default defineConfig({
       lastUpdated: false,
       plugins: [
         lucode({
-          navLinks: [
-            { label: 'Docs', link: '/guides/getting-started/' },
-            { label: 'API', link: '/reference/plugin-api/' },
-          ],
+          navLinks: [{ label: 'Rules', link: '/rules' }],
         }),
         starlightScrollToTop(),
         starlightSidebarSwipe(),
@@ -45,20 +42,19 @@ export default defineConfig({
           label: 'Discord',
           href: 'https://discord.gg/dSjmeM5yAy',
         },
-        {
-          icon: 'comment',
-          label: 'Fluxer',
-          href: 'https://fluxer.gg/6iOvdPQK',
-        },
       ],
       sidebar: [
         {
-          label: '[home] Home',
+          label: 'Home',
           link: '/',
         },
         {
           label: 'Rules',
           link: '/rules',
+        },
+        {
+          label: 'Minecraft',
+          items: [{ autogenerate: { directory: 'minecraft' } }],
         },
       ],
     }),
