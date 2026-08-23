@@ -15,12 +15,14 @@
   },
   "dependencies": {
     "@astrojs/starlight": "0.41.7",
+    "@iconify/json": "^2.2.519",
     "astro": "7.2.4",
     "lucode-starlight": "^1.0.0",
     "sharp": "^0.34.2",
     "starlight-scroll-to-top": "^1.0.1",
     "starlight-sidebar-swipe": "^0.3.2",
-    "starlight-theme-black": "^0.6.0"
+    "starlight-theme-black": "^0.6.0",
+    "unplugin-icons": "^23.0.1"
   },
   "devDependencies": {
     "eslint": "^10.8.1",

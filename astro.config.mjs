@@ -4,6 +4,7 @@ import starlight from '@astrojs/starlight';
 import lucode from 'lucode-starlight';
 import starlightScrollToTop from 'starlight-scroll-to-top';
 import starlightSidebarSwipe from 'starlight-sidebar-swipe';
+import Icons from 'unplugin-icons/vite';
 
 // https://astro.build/config for more information
 export default defineConfig({
@@ -13,6 +14,9 @@ export default defineConfig({
   site: 'https://wiki.spherico.one/',
 
   trailingSlash: 'ignore',
+  vite: {
+    plugins: [Icons({ compiler: 'astro' })],
+  },
   integrations: [
     starlight({
       title: 'Spherico Wiki',
@@ -26,6 +30,7 @@ export default defineConfig({
       plugins: [
         lucode({
           navLinks: [{ label: 'Rules', link: '/rules' }],
+          footerText: 'Built with spite, weaponized autism and plenty of swearing.',
         }),
         starlightScrollToTop(),
         starlightSidebarSwipe(),
