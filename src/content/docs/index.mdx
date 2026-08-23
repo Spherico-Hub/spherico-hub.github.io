@@ -17,10 +17,9 @@ hero:
       icon: discord
 ---
 
-import { CardGrid, LinkCard } from '@astrojs/starlight/components';
+import { Badge, CardGrid, LinkCard } from '@astrojs/starlight/components';
 import { Aside } from '@astrojs/starlight/components';
 import { ContainerSection } from 'lucode-starlight/components';
-import MdiMinecraft from '~icons/mdi/minecraft';
 
 <ContainerSection>
   <Aside title="This server has a whitelist" type="tip">
@@ -30,7 +29,7 @@ import MdiMinecraft from '~icons/mdi/minecraft';
 
 <LinkCard title="Rules" description="To read before playing!" href="/rules" />
 
-## [Season 5] Modded Minecraft
+## <Badge text='Season 5' variant='note' size='large' /> Modded Minecraft
 
 <CardGrid>
   <LinkCard
@@ -55,11 +54,11 @@ import MdiMinecraft from '~icons/mdi/minecraft';
   />
 </CardGrid>
 
-## BeamNG.drive
+## <Badge text='Soon' size='large' /> BeamNG.drive
 
 <LinkCard title="Coming soon!" description="Stay tuned for more information!" />
 
-## Satisfactory
+## <Badge text='Soon' size='large' /> Satisfactory
 
   <LinkCard title="Coming soon!" description="Stay tuned for more information!" />
 </ContainerSection>
