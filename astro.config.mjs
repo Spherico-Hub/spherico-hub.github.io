@@ -29,7 +29,6 @@ export default defineConfig({
       lastUpdated: false,
       plugins: [
         lucode({
-          navLinks: [{ label: 'Rules', link: '/rules' }],
           footerText: 'Built with spite, weaponized autism and plenty of swearing.',
         }),
         starlightScrollToTop(),
