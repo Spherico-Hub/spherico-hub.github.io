@@ -7,14 +7,28 @@
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "prepare": "husky"
+  },
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown"
   },
   "dependencies": {
-    "@astrojs/starlight": "^0.36.1",
-    "astro": "^5.16.6",
+    "@astrojs/starlight": "0.41.7",
+    "@iconify/json": "^2.2.519",
+    "astro": "7.2.4",
+    "lucode-starlight": "^1.0.0",
     "sharp": "^0.34.2",
-    "starlight-ion-theme": "^2.3.3",
-    "starlight-links-validator": "^0.19.2",
-    "starlight-theme-black": "^0.6.0"
+    "starlight-scroll-to-top": "^1.0.1",
+    "starlight-sidebar-swipe": "^0.3.2",
+    "starlight-theme-black": "^0.6.0",
+    "unplugin-icons": "^23.0.1"
+  },
+  "devDependencies": {
+    "eslint": "^10.8.1",
+    "eslint-config-prettier": "^10.1.8",
+    "husky": "^9.1.7",
+    "lint-staged": "^17.3.0",
+    "prettier": "^3.9.6"
   }
 }

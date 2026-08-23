@@ -5,37 +5,38 @@ sidebar:
   order: 0
   label: Setup guide
 
-prev: 
+prev:
   link: /wiki/rules
   label: Service rules
 
 next: true
 ---
+
 import { Aside, Icon, Steps, Tabs, TabItem } from '@astrojs/starlight/components';
 
 ## Installing Prism Launcher
+
 <Tabs>
 
-  <TabItem label="Windows" icon="seti:windows">
-    Get it from the [official source](https://prismlauncher.org/download/windows/).
-    If you fancy your terminal instead, enter: `winget install prismlauncher` or `winget install prismlauncher.prismlauncher`.
-  </TabItem>
+<TabItem label="Windows" icon="seti:windows">
+  Get it from the [official source](https://prismlauncher.org/download/windows/). If you fancy your
+  terminal instead, enter: `winget install prismlauncher` or `winget install
+  prismlauncher.prismlauncher`.
+</TabItem>
 
-  <TabItem label="macOS" icon="apple">
-    Get it from the [offical source](https://prismlauncher.org/download/mac/). 
-  </TabItem>
+<TabItem label="macOS" icon="apple">
+  Get it from the [offical source](https://prismlauncher.org/download/mac/).
+</TabItem>
 
-  <TabItem label="Linux" icon="linux">
-    Flatpak is a prerequisite.\
-    Enter: `flatpak install flathub org.prismlauncher.PrismLauncher`
-  </TabItem>
+<TabItem label="Linux" icon="linux">
+  Flatpak is a prerequisite. Enter: `flatpak install flathub org.prismlauncher.PrismLauncher`
+</TabItem>
 
 </Tabs>
 
 ## Installing Java
-<Aside>
-  If you already have Java installed, you can skip this section.
-</Aside>
+
+<Aside>If you already have Java installed, you can skip this section.</Aside>
 
 <Steps>
   1. On Prism Launcher's top bar, select `Settings`.
@@ -46,6 +47,7 @@ import { Aside, Icon, Steps, Tabs, TabItem } from '@astrojs/starlight/components
 </Steps>
 
 ## Installing the modpack
+
 <Steps>
   1. Download the file through [this link](https://github.com/Spherico-Hub/modpack/releases/latest/download/SphericoMC.5.zip).
   2. In Prism Launcher, **create** a new instance, go to **import** and **select** the file you have downloaded.
@@ -57,17 +59,19 @@ import { Aside, Icon, Steps, Tabs, TabItem } from '@astrojs/starlight/components
 </Aside>
 
 ## Updating the modpack
-The modpack will automatically update itself upon launching the game.
-There are no further actions required.
+
+The modpack will generally update itself upon launching the game.
 
 <Aside type="note" icon="seti:info" title="Major season-to-season updates">
   When upgrading between seasons, it is best to re-install the modpack from scratch.
 </Aside>
 
 # Connect to the server
+
 The server should be conveniently be in your multiplayer menu already!
 Otherwise just enter `services.spherico.one` in the new server window.
 
 <Aside type="danger" icon="error" title="Whitelist">
-Make sure you have given your Minecraft username to an administrator, otherwise the whitelist will prevent you from joining the server.
+  Make sure you have given your Minecraft username to an administrator, otherwise the whitelist will
+  prevent you from joining the server.
 </Aside>

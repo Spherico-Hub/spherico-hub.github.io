@@ -1,6 +1,6 @@
 ---
 title: Rules
-sidebar: 
+sidebar:
   order: 4
 prev: false
 next:
@@ -15,6 +15,7 @@ The administration team reserves the right to use their disciplinary powers at t
 Your presence in this server implies the agreement to these guidelines, including all further changes. These changes might be done at any time without notice, making it your responsibility to stay updated.
 
 # General Guidelines
+
 1. Be respectful to others and yourself
 2. No spamming or self-promotion
 3. Keep discussions appropriate
@@ -27,6 +28,7 @@ Your presence in this server implies the agreement to these guidelines, includin
 10. Communications in any language is allowed, as long as it doesn't put anyone in a situation of exclusion within a conversation
 
 # Game Guidelines
+
 11. No griefing or theft
 12. No hacks or exploits
 13. No intentional lag-inducing actions/builds

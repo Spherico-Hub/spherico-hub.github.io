@@ -1,63 +1,66 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
-import { ion } from 'starlight-ion-theme';
-// import starlightLinksValidator from 'starlight-links-validator'; // Uncomment when actually in use
-
+import lucode from 'lucode-starlight';
+import starlightScrollToTop from 'starlight-scroll-to-top';
+import starlightSidebarSwipe from 'starlight-sidebar-swipe';
+import Icons from 'unplugin-icons/vite';
 
 // https://astro.build/config for more information
 export default defineConfig({
-    // basic site config
+  // basic site config
 
-    // For site location config
-    site: "https://wiki.spherico.one/", // Uncomment when DNS setup is done. 
+  // For site location config
+  site: 'https://wiki.spherico.one/',
 
-    trailingSlash: "ignore",
-    integrations: [
-        starlight({
-            title: 'Spherico Wiki',
-		    logo: {
-			light: './src/assets/logo-light.svg',
-			dark: './src/assets/logo-dark.svg',
-			replacesTitle: true,
-		    },
-		    favicon: '/favicon.ico',
-		    lastUpdated: false,
-		    plugins: [
-			ion({
-			    footer: {
-				text: 'Built with spite, weaponized autism and plenty of swearing.',
-			    },
-			    icons: undefined
-			}),
-		    ],
-		    tableOfContents: true,
-		    social: [
-			{ icon: 'github', label: 'Source', href: 'https://github.com/itsaerosphere/wiki' },
-			{ icon: 'discord', label: 'Discord', href: 'https://discord.gg/dSjmeM5yAy', },
-			{ icon: 'comment', label: 'Fluxer', href: 'https://fluxer.gg/6iOvdPQK'}
-		    ],
-		    sidebar: [
-			{
-			    label: '[home] Home',
-			    link: '/',
-			},
-			{
-			    label: 'Rules',
-			    link: '/rules',
-			},
-			{
-			    label: 'Minecraft',
-			    autogenerate: {
-				    directory: '/minecraft', 
-				    collapsed: false,
-			},
-			    badge: {
-				    text: 'Active',
-				    variant: 'success',
-			    },
-			},
-		    ],
+  trailingSlash: 'ignore',
+  vite: {
+    plugins: [Icons({ compiler: 'astro' })],
+  },
+  integrations: [
+    starlight({
+      title: 'Spherico Wiki',
+      logo: {
+        light: './src/assets/logo-black.svg',
+        dark: './src/assets/logo-white.svg',
+        replacesTitle: true,
+      },
+      favicon: '/favicon.ico',
+      lastUpdated: false,
+      plugins: [
+        lucode({
+          footerText: 'Built with spite, weaponized autism and plenty of swearing.',
         }),
-    ],
+        starlightScrollToTop(),
+        starlightSidebarSwipe(),
+      ],
+      tableOfContents: true,
+      social: [
+        {
+          icon: 'github',
+          label: 'Source',
+          href: 'https://github.com/itsaerosphere/wiki',
+        },
+        {
+          icon: 'discord',
+          label: 'Discord',
+          href: 'https://discord.gg/dSjmeM5yAy',
+        },
+      ],
+      sidebar: [
+        {
+          label: 'Home',
+          link: '/',
+        },
+        {
+          label: 'Rules',
+          link: '/rules',
+        },
+        {
+          label: 'Minecraft',
+          items: [{ autogenerate: { directory: 'minecraft' } }],
+        },
+      ],
+    }),
+  ],
 });
