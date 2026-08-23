@@ -1,15 +1,16 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
-import { ion } from 'starlight-ion-theme';
-// import starlightLinksValidator from 'starlight-links-validator'; // Uncomment when actually in use
+import lucode from 'lucode-starlight';
+import starlightScrollToTop from 'starlight-scroll-to-top';
+import starlightSidebarSwipe from 'starlight-sidebar-swipe';
 
 // https://astro.build/config for more information
 export default defineConfig({
   // basic site config
 
   // For site location config
-  site: 'https://wiki.spherico.one/', // Uncomment when DNS setup is done.
+  site: 'https://wiki.spherico.one/',
 
   trailingSlash: 'ignore',
   integrations: [
@@ -23,12 +24,14 @@ export default defineConfig({
       favicon: '/favicon.ico',
       lastUpdated: false,
       plugins: [
-        ion({
-          footer: {
-            text: 'Built with spite, weaponized autism and plenty of swearing.',
-          },
-          icons: undefined,
+        lucode({
+          navLinks: [
+            { label: 'Docs', link: '/guides/getting-started/' },
+            { label: 'API', link: '/reference/plugin-api/' },
+          ],
         }),
+        starlightScrollToTop(),
+        starlightSidebarSwipe(),
       ],
       tableOfContents: true,
       social: [
@@ -56,17 +59,6 @@ export default defineConfig({
         {
           label: 'Rules',
           link: '/rules',
-        },
-        {
-          label: 'Minecraft',
-          autogenerate: {
-            directory: '/minecraft',
-            collapsed: false,
-          },
-          badge: {
-            text: 'Active',
-            variant: 'success',
-          },
         },
       ],
     }),
