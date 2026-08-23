@@ -3,37 +3,30 @@ title: Welcome!
 description: Homepage
 template: splash
 hero:
-  title: Welcome to Spherico MC's official wiki!
+  layout: split-left
+  title: Welcome to Spherico's official wiki!
   tagline: Information on Spherico's game servers.
   image:
-    file: ./spherico.png
+    file: ../../assets/logo-icon.png
   actions:
     - text: Source
       link: https://github.com/itsaerosphere/wiki
       icon: github
-      iconPlacement: start
-      variant: primary
     - text: Discord
       link: https://discord.gg/dSjmeM5yAy
       icon: discord
-    - text: Fluxer
-      link: https://fluxer.gg/6iOvdPQK
-      icon: comment
-      iconPlacement: start
-      variant: secondary
-banner:
-  content: We are moving away from Discord. <a href="https://fluxer.gg/6iOvdPQK">Join us on Fluxer!</a>
-prev: false
-next: false
 ---
 
 import { CardGrid, LinkCard } from '@astrojs/starlight/components';
 import { Aside } from '@astrojs/starlight/components';
+import { ContainerSection } from 'lucode-starlight/components';
+import MdiMinecraft from '~icons/mdi/minecraft';
 
-<Aside title="This server has a whitelist" type="tip">
-  Before you can join the server, you will need to ask for an invitation from one of the server
-  admins. You can request one on the [Discord server](https://discord.gg/dSjmeM5yAy)
-</Aside>
+<ContainerSection>
+  <Aside title="This server has a whitelist" type="tip">
+    Before you can join the server, you will need to ask for an invitation from one of the server
+    admins. You can request one on the [Discord server](https://discord.gg/dSjmeM5yAy)
+  </Aside>
 
 <LinkCard title="Rules" description="To read before playing!" href="/rules" />
 
@@ -68,4 +61,5 @@ import { Aside } from '@astrojs/starlight/components';
 
 ## Satisfactory
 
-<LinkCard title="Coming soon!" description="Stay tuned for more information!" />
+  <LinkCard title="Coming soon!" description="Stay tuned for more information!" />
+</ContainerSection>
