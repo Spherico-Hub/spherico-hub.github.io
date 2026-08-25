@@ -10,8 +10,8 @@ export const collections = {
     loader: docsLoader(),
     schema: docsSchema({
       extend: z.object({
-        ...ExtendDocsSchema.shape,
         ...videosSchema.shape,
+        ...ExtendDocsSchema.shape,
       }),
     }),
   }),

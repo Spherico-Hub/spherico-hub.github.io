@@ -5,7 +5,7 @@ import lucode from 'lucode-starlight';
 import starlightScrollToTop from 'starlight-scroll-to-top';
 import starlightSidebarSwipe from 'starlight-sidebar-swipe';
 import Icons from 'unplugin-icons/vite';
-import starlightVideosPlugin from 'starlight-videos';
+import starlightVideos from 'starlight-videos';
 
 // https://astro.build/config for more information
 export default defineConfig({
@@ -34,7 +34,7 @@ export default defineConfig({
         }),
         starlightSidebarSwipe(),
         starlightScrollToTop(),
-        starlightVideosPlugin(),
+        starlightVideos(),
       ],
       tableOfContents: true,
       social: [
