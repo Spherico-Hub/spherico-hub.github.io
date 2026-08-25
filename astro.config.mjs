@@ -5,6 +5,7 @@ import lucode from 'lucode-starlight';
 import starlightScrollToTop from 'starlight-scroll-to-top';
 import starlightSidebarSwipe from 'starlight-sidebar-swipe';
 import Icons from 'unplugin-icons/vite';
+import starlightVideosPlugin from 'starlight-videos';
 
 // https://astro.build/config for more information
 export default defineConfig({
@@ -31,8 +32,9 @@ export default defineConfig({
         lucode({
           footerText: 'Built with spite, weaponized autism and plenty of swearing.',
         }),
-        starlightScrollToTop(),
         starlightSidebarSwipe(),
+        starlightScrollToTop(),
+        starlightVideosPlugin(),
       ],
       tableOfContents: true,
       social: [
