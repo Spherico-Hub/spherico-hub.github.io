@@ -1,35 +1,48 @@
 ---
-title: Installation guide for modded Minecraft
-description: Setup information
+title: Setup guide for modded Minecraft
+description: Start your journey here.
 sidebar:
   order: 0
-  label: Setup guide
+  label: Setup
 
-prev:
-  link: /wiki/rules
-  label: Service rules
-
-next: true
+prev: false
+next: false
 ---
 
-import { Aside, Icon, Steps, Tabs, TabItem } from '@astrojs/starlight/components';
+import { Aside, Icon, LinkButton, LinkCard, Steps, Tabs, TabItem } from '@astrojs/starlight/components';
 
 ## Installing Prism Launcher
 
 <Tabs>
 
 <TabItem label="Windows" icon="seti:windows">
-  Get it from the [official source](https://prismlauncher.org/download/windows/). If you fancy your
+  Get the **installer (.exe)** from the official source using the button below. If you fancy your
   terminal instead, enter: `winget install prismlauncher` or `winget install
   prismlauncher.prismlauncher`.
+  <LinkButton
+    href="https://prismlauncher.org/download/windows/"
+    icon="external"
+    iconPlacement="start"
+  >
+    Download Prism Launcher
+  </LinkButton>
 </TabItem>
 
 <TabItem label="macOS" icon="apple">
-  Get it from the [offical source](https://prismlauncher.org/download/mac/).
+  Get it from the offical source using the button below.
+  <LinkButton
+    href="https://prismlauncher.org/download/mac/"
+    icon="external"
+    iconPlacement="start"
+  >
+    Download Prism Launcher
+  </LinkButton>
 </TabItem>
 
 <TabItem label="Linux" icon="linux">
-  Flatpak is a prerequisite.\ Enter: `flatpak install flathub org.prismlauncher.PrismLauncher`
+  Flatpak is a prerequisite.\
+  Enter the following command in your terminal:\
+  `flatpak install flathub org.prismlauncher.PrismLauncher`
 </TabItem>
 
 </Tabs>
@@ -49,10 +62,27 @@ import { Aside, Icon, Steps, Tabs, TabItem } from '@astrojs/starlight/components
 ## Installing the modpack
 
 <Steps>
-  1. Download the file through [this link](https://github.com/Spherico-Hub/modpack/releases/latest/download/SphericoMC.5.zip).
+  1. Download the file through the button below.
   2. In Prism Launcher, **create** a new instance, go to **import** and **select** the file you have downloaded.
   3. Launch the instance **at least once** and let it load to the main menu.
 </Steps>
+
+<LinkButton
+  href="https://github.com/Spherico-Hub/modpack/releases/latest/download/SphericoMC.5.zip"
+  icon="external"
+  iconPlacement="start"
+>
+  Download the modpack
+</LinkButton>
+
+<Aside type='caution' title='Analog Audio'>
+  If Minecraft asks you to download AudioLib for Analog Audio, you **must** click on `download and install`.
+  Not doing so will prevent Analog Audio from functioning.
+</Aside>
+
+<Aside type='tip' title='Create: Deep Seas'>
+  If Minecraft asks you to set up defaults for Create: Deep Seas, you can safely use the provided defaults.
+</Aside>
 
 <Aside type="note" icon="seti:config" title="Keeping your configuration">
   If you want to migrate your configuration, [follow this guide](/minecraft/troubleshooting).
@@ -62,16 +92,29 @@ import { Aside, Icon, Steps, Tabs, TabItem } from '@astrojs/starlight/components
 
 The modpack will generally update itself upon launching the game.
 
-<Aside type="note" icon="seti:info" title="Major season-to-season updates">
-  When upgrading between seasons, it is best to re-install the modpack from scratch.
+<Aside type="danger" title="Neoforge Updates">
+  Some updates require manual intervention for upgrading NeoForge.
+  Please refer to [the troubleshooting page](/minecraft/troubleshooting) for more information.
 </Aside>
 
-# Connect to the server
+## Connect to the server
 
 The server should be conveniently be in your multiplayer menu already!
-Otherwise just enter `services.spherico.one` in the new server window.
+Otherwise just enter `services.spherico.one` in a new server window.
 
 <Aside type="danger" icon="error" title="Whitelist">
   Make sure you have given your Minecraft username to an administrator, otherwise the whitelist will
   prevent you from joining the server.
 </Aside>
+
+# Next up
+<LinkCard
+  title="Troubleshooting"
+  href="/minecraft/troubleshooting"
+  description="Something went wrong? Try these common fixes."
+/>
+<LinkCard
+  title="Customization"
+  href="/minecraft/customization"
+  description="For those who want to bring their own touch to their experience."
+/>
