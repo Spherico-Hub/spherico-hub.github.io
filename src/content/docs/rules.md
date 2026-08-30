@@ -1,11 +1,7 @@
 ---
-title: Rules
+title: Service Rules
 sidebar:
   order: 4
-prev: false
-next:
-  link: /minecraft/s4/setup
-  label: Get started!
 ---
 
 By using Spherico services, you accept to have your creations be photographed and displayed in our communication channels, unless you advise us to the contrary in written form.
