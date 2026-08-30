@@ -2,16 +2,13 @@
   "name": "wiki-files",
   "type": "module",
   "version": "0.0.1",
+  "engines": {"node": ">=22.12.0"},
   "scripts": {
     "dev": "astro dev --host 0.0.0.0",
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro",
-    "prepare": "husky"
-  },
-  "lint-staged": {
-    "**/*": "prettier --write --ignore-unknown"
+    "astro": "astro"
   },
   "dependencies": {
     "@astrojs/starlight": "0.41.7",
